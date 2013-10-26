@@ -1,0 +1,464 @@
+.clearfix {
+	clear: both;
+}
+
+body {
+	background: url('../img/bg.png');
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#wrapper1 {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+}
+
+#start_layer .logo {
+    color: #ffffff;
+	height: 43px;
+	margin-top: 4%;
+	line-height: 70px;
+	opacity: 0;
+    font-size: 50px;
+    font-family: "Helvetica";
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 5px 5px #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#start_layer .userlogin {
+	right: 120px;
+	position: absolute;
+	letter-spacing: 0px;
+	width: 100px;
+	padding: 10px;
+	margin-top: -6px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+#start_layer .userlogin:hover {
+	background: #206720;
+}
+
+#start_layer .userlogin .dropdown {
+	display: none;
+	cursor: pointer;
+	right: 150px;
+	position: absolute;
+}
+
+#start_layer .userlogin:hover .dropdown {
+	display: block;
+}
+
+#start_layer .userlogin .username {
+	height: 15px;
+	width: 51px;
+	background: url('../img/user.png');
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 16px; 
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+#start_layer .userlogin .useravatar {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url('../img/avatar.png');
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#start_layer .grid.first {
+	margin-left: 0px;
+}
+
+#start_layer .grid {
+	float: left;
+	width: 126px;
+	height: 382px;
+	margin-right: 15px;
+
+}
+
+#start_layer .grid.grid2 {
+	margin-left: 48px;
+}
+
+#start_layer .grid>div { 
+	width: 120px;
+	height: 120px;
+	margin: 20px;
+	background: #0f0;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px #000;
+    opacity: 0;
+}
+
+#start_layer .grid>div:hover {
+	border-color: #205620;
+    box-shadow: 0 5px 10px #fff;
+}
+
+#start_layer .grid>div:active {
+    box-shadow: none;
+}
+
+#start_layer .grid>div.null { 
+	z-index: 1;
+	background: none;
+}
+
+#start_layer .grid>div.double {
+	width: 248px;
+}
+
+#start_layer .dropdown ul {
+	list-style: none;
+	position: absolute;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #3b3b3b;
+	margin-top: 10px;
+	font-size: 15px;
+	padding: 5px 0;
+	z-index: 3;
+	margin-left: 5px;
+	
+}
+
+#start_layer .dropdown li {
+	padding: 9px;
+	padding-left: 20px;
+	padding-right: 94px;
+}
+
+#start_layer .dropdown li:hover {
+	background: #e5e5e5;
+}
+
+#start_layer .dropdown a {
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+	font-family: "Segoe UI",
+             Candara,
+             "Bitstream Vera Sans",
+             "DejaVu Sans",
+             "Trebuchet MS",
+             Verdana,
+             sans-serif;
+}
+
+
+
+
+
+
+#start_layer .grid>div {
+}
+
+#start_layer .grid>div.promostyle {
+	background: url('../uploads/promostyle.jpg') top left transparent;
+}
+
+#start_layer .grid>div.davidoff {
+	background: url('../uploads/davidoff.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.di {
+	background: url('../uploads/di.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.urs {
+	background: url('../uploads/urs.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.koza {
+	background: url('../uploads/koza.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.beauty {
+	background: url('../uploads/beauty.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.roda {
+	background: url('../uploads/roda.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.fb {
+	background: url('../uploads/fb.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.vk {
+	background: url('../uploads/vk.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.gmail {
+	background: url('../uploads/gmail.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.bp {
+	background: url('../uploads/bp.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.iua {
+	background: url('../uploads/iua.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.skype {
+	background: url('../uploads/skype.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.ns {
+	background: url('../uploads/ns.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.sc {
+    background: url('../uploads/sc.png') bottom left transparent;
+}
+
+#start_layer .grid>div.ld {
+    background: url('../uploads/ld.png') bottom left transparent;
+}
+
+#start_layer .grid>div.mspy {
+    background: url('../uploads/mspy.png') bottom left transparent;
+}
+
+#start_layer .grid>div.v2 {
+    background: url('../uploads/v2.png') bottom left transparent;
+}
+
+#start_layer .grid>div.biztorg {
+    background: url('../uploads/biztorg.png') bottom left transparent;
+}
+
+#start_layer .grid>div.bkbm {
+    background: url('../uploads/bkbm.png') bottom left transparent;
+}
+
+#start_layer .grid>div.vilpe {
+    background: url('../uploads/vilpe.png') bottom left transparent;
+}
+
+#start_layer .grid>div.nt {
+    background: url('../uploads/nt.png') bottom left transparent;
+}
+
+#start_layer .grid>div.sl {
+    background: url('../uploads/sl.jpg') bottom left transparent;
+}
+
+#start_layer .grid>div.leo {
+    background: url('../uploads/leo.png') bottom left transparent;
+}
+
+#start_layer .grid>div.yousend {
+    background: url('../uploads/ys.png') bottom left transparent;
+}
+
+#start_layer .grid>div>span {
+    background:#ff0000;
+    float: right;
+    margin-top: -9px;
+    margin-right: -13px;
+    padding: 5px;
+    color: white;
+    text-transform: lowercase;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #990000;
+}
+
+#start_layer .grid>div>a {
+	display:block;
+	width: 120px;
+	height: 120px;
+}
+
+#start_layer .grid>div.double>a {
+	width: 248px;
+}
+
+#start_layer .grid>div:hover {
+	opacity: 1;
+}
+
+div#show_site {
+	position: absolute;
+	z-index: 6;
+	background-color: #003E00;
+	display: none;
+	width: 90%;
+	height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 30px 10px #000;
+}
+
+div#show_site .close{  
+	width: 32px;
+	height: 35px;
+	right: 27px;
+    color: #ddd;
+	position: absolute;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+	z-index: 5;
+	cursor: pointer;
+	margin-top: 16px;
+}
+
+div#show_site .close:hover { 
+    color: #fff;
+}
+
+div#show_site #framewrapper{  
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	background: #fff;
+}
+
+div#show_site .description {
+	font-size: 16px;
+	background: rgba(255,255,255,1);
+	z-index: 10;
+	padding: 5px;
+	font-family: "Segoe UI",
+             Candara,
+             "Bitstream Vera Sans",
+             "DejaVu Sans",
+             "Trebuchet MS",
+             Verdana,
+             sans-serif;
+    padding-right: 10px;
+}
+
+.grids {
+	display: none;
+	width: 990px;
+	margin: 0 auto;
+}
+
+#start_layer .disqus {
+	right: 0;
+	position: absolute;
+	z-index: 11;
+	background: #fff;
+	top: 0;
+	width: 400px;
+	height: 100%;
+	padding: 20px;
+		font-family: "Segoe UI",
+             Candara,
+             "Bitstream Vera Sans",
+             "DejaVu Sans",
+             "Trebuchet MS",
+             Verdana,
+             sans-serif;
+        right: -440px;
+}
+
+#start_layer .disqus h4 {
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: #003E00;
+}
+
+#start_layer .disqus .show_me {
+	height: 100%;
+	margin-left: -100px;
+	top: 0;
+	position: absolute;
+	margin-left: -100px;
+	background: #fff;
+	width: 100px;
+	opacity: 0.1;
+}
+
+#start_layer .disqus .show_me:hover {
+	opacity: 0.3;
+}
+
+.url { 
+	padding: 20px;
+		font-family: "Helvetica",
+             Candara,
+             "Bitstream Vera Sans",
+             "DejaVu Sans",
+             "Trebuchet MS",
+             Verdana,
+             sans-serif;
+        background: -moz-linear-gradient(top, #111, #000);
+        color: #fff;
+        font-size: 30px;
+       
+}
+
+.url a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#start_layer .grid div.mini {
+	width: 57px;
+	height: 56px;
+	float: left;
+	border: 3px solid transparent;
+	background:#fff;
+	margin-bottom: 2px;
+}
+
+#start_layer .grid div.mini:hover {
+	border-color: #205620;
+}
+
+#start_layer .grid>div.all_contact {
+	background: url('../uploads/gmail.jpg') center bottom no-repeat;
+	border: none;
+	width: 126px;
+}
+
+#start_layer .grid div.mini.l {
+	margin-right: 0px;
+}
+
+#start_layer .grid .all_contact div.mini.l {
+	background: url('../uploads/gmail.jpg') top left;
+	border-left: 3px solid #003E00;
+	border-top: 3px solid #003E00;
+	border-bottom: none;
+}
+
+#start_layer .grid .all_contact div.mini.r {
+	background: url('../uploads/gmail.jpg') top right;
+	border-right: 3px solid #003E00;
+	border-top: 3px solid #003E00;
+	border-bottom: none;
+}
+
+#start_layer .grid .all_contact div.mini.l.b {
+	background: url('../uploads/gmail.jpg') bottom left;
+	border-top: 0px solid transparent;
+}
+
+#start_layer .grid .all_contact div.mini.r.b {
+	background: url('../uploads/gmail.jpg') bottom right;
+	border-top: 0px solid transparent;
+}
