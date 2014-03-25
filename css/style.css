@@ -168,6 +168,15 @@ body {
     background: url('../uploads/kino.png') bottom left transparent;
 }
 
+#start_layer .grid>div.ln {
+    background: url('../uploads/ln.png') bottom left transparent;
+}
+
+
+#start_layer .grid>div.ss {
+    background: url('../uploads/ss.png') bottom left transparent;
+}
+
 #start_layer .grid>div>span {
 	background:#0497cd;
 	float: right;
