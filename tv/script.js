@@ -15,13 +15,12 @@
 // @updateURL {wenn die Versionsnummer verschieden ist,
 // USI dein Userscript aktualisieren}
 // @run-at document-end 
-// @include-jquery false
+// @include-jquery true
 // @version 1.0.0
 // ==/UserScript==
-alert('ok');
 console.log('iwork');
 console.log(document, location);
-document.addEventListener("DOMContentLoaded", function(event) { 
+setTimeout(function(){
   //do work
 	if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
 	  $('#login').val('6024485')
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    }
 	  }
 	});
-});
+},10000)
 
 var currentFocus = {
 };
