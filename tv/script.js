@@ -23,7 +23,7 @@ if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
   $('button[type=submit]').click();
 }
 function Init() {
-  $('body').append('<link rel="stylesheet" type="text/css" href="http://localhost:3000/tv.css" />');
+  $('body').append('<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/vladislavmega/vladislavmega.github.io/master/tv/tv.css" />');
   $('select#select-category option:visible').each(function () {
     $option = $(this);
     currentFocus[$(this).val()] = 0;
