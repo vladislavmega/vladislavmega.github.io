@@ -1,11 +1,26 @@
 // ==UserScript==
-// @name        vlad
-// @namespace   tvscript
-// @include     about:newtab
-// @version     1
-// @grant       none
-// @include android.bilink.tv
+// @name {Userscript Name}
+// @namespace {deine Webseite?!}
+// @author {Dein Name}
+// @description {Userscript Beschreibung}
+// @include *
+// Wenn dein Userscript auf allen Seiten ausgefuhrt werden soll: *
+// Bei einem Include, kannst du auch mehrere * als Wildcard nutzen
+// um es als regularen Ausdruck zu verwenden,
+// allerdings muss dann der gesamte Ausdruck passen!
+// zum Beispiel: *.beliebige-webseite.de*
+// Ansonsten muss es so aussehen: www.beliebige-webseite.de
+// @info {weitere Informationen ...}
+// @grant {erbitte Zugriff auf extra Funktionen}
+// @updateURL {wenn die Versionsnummer verschieden ist,
+// USI dein Userscript aktualisieren}
+// @run-at document-end 
+// @include-jquery false
+// @version 1.0.0
 // ==/UserScript==
+alert('ok');
+console.log('iwork');
+console.log(document, location);
 document.addEventListener("DOMContentLoaded", function(event) { 
   //do work
 	if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
