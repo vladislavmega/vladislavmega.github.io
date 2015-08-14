@@ -20,22 +20,18 @@
 // ==/UserScript==
 console.log('iwork');
 console.log(document, location);
-setTimeout(function(){
+$(document).ready(function(){
   //do work
 	if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
+	  document.getElementById('login').value = '6024485';
 	  $('#login').val('6024485')
 	  $('#pass').val('7519133');
 	  $('button[type=submit]').click();
-	}
-	$.ajaxSetup({
-	  complete: function () {
-	    countAjaxSuccess++;
-	    if (countAjaxSuccess == 2) {
+	} else {
 	      Init();
-	    }
-	  }
-	});
-},10000)
+
+	}
+});
 
 var currentFocus = {
 };
@@ -43,7 +39,7 @@ var countAjaxSuccess = 0;
 
 
 function Init() {
-  $('body').append('<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/vladislavmega/vladislavmega.github.io/master/tv/tv.css" />');
+  $('body').append('<link rel="stylesheet" type="text/css" href="http://vladislavmega.github.io/tv/tv.css" />');
   $('select#select-category option:visible').each(function () {
     $option = $(this);
     currentFocus[$(this).val()] = 0;
