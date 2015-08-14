@@ -6,22 +6,28 @@
 // @grant       none
 // @include android.bilink.tv
 // ==/UserScript==
+document.addEventListener("DOMContentLoaded", function(event) { 
+  //do work
+	if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
+	  $('#login').val('6024485')
+	  $('#pass').val('7519133');
+	  $('button[type=submit]').click();
+	}
+	$.ajaxSetup({
+	  complete: function () {
+	    countAjaxSuccess++;
+	    if (countAjaxSuccess == 2) {
+	      Init();
+	    }
+	  }
+	});
+});
+
 var currentFocus = {
 };
 var countAjaxSuccess = 0;
-$.ajaxSetup({
-  complete: function () {
-    countAjaxSuccess++;
-    if (countAjaxSuccess == 2) {
-      Init();
-    }
-  }
-})
-if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
-  $('#login').val('6024485')
-  $('#pass').val('7519133');
-  $('button[type=submit]').click();
-}
+
+
 function Init() {
   $('body').append('<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/vladislavmega/vladislavmega.github.io/master/tv/tv.css" />');
   $('select#select-category option:visible').each(function () {
