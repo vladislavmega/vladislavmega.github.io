@@ -15,7 +15,7 @@
 // @updateURL {wenn die Versionsnummer verschieden ist,
 // USI dein Userscript aktualisieren}
 // @run-at document-end 
-// @include-jquery true
+// @include-jquery false
 // @version 1.0.0
 // ==/UserScript==
 $(document).ready(function(){
