@@ -75,21 +75,23 @@ function Init() {
 }
 
 function changeCat (direction) {
-   var currentCatIndex = parseInt($('select#select-category:visible').val());
+   var currentCatIndex = parseInt($('select#select-category').eq(0).val());
    var newCat = currentCatIndex+direction;
-   var lastCatIndex = parseInt( $('select#select-category option:visible:last-child').val() );
+   var lastCatIndex = 7;
    
    if (direction==-1 && currentCatIndex==0) {
      newCat = lastCatIndex;
    }
   
-   if (direction==1 && lastCatIndex==currentCatIndex) {
+   if (direction==1 && currentCatIndex==7) {
      newCat = 0;
    }
+
+	newCat = ''+newCat;
   
-   $('select#select-category:visible').val(newCat);
+   $('select#select-category').eq(0).val(newCat);
   
-  $('select#select-category:visible').trigger('change');
+  $('select#select-category').eq(0).trigger('change');
   changeFocus();
 }
 
