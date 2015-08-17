@@ -18,8 +18,6 @@
 // @include-jquery true
 // @version 1.0.0
 // ==/UserScript==
-console.log('iwork');
-console.log(document, location);
 $(document).ready(function(){
   //do work
 	if ( location.href.match('android.bilink.tv/authorization.php')!==null ) {
@@ -28,7 +26,15 @@ $(document).ready(function(){
 	  $('#pass').val('7519133');
 	  $('button[type=submit]').click();
 	} else {
-	      Init();
+
+		var interval = setInterval(function(){
+		if ( $('.ui-link-inherit:visible').size()){
+		      Init();
+			clearInterval(interval);
+		}
+
+		},150);
+
 
 	}
 });
