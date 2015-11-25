@@ -1,275 +1,60 @@
-.clearfix {
-	clear: both;
+.header-panel {
+    background: url('../img/material-design.jpg') right bottom;
+}
+
+.menu ul.siteslist {
+    margin: 0;
+}
+
+.sitepic img {
+    height: 50px !important;
+}
+
+.menu ul li {
+    padding: 5px 0 5px 0px;
+}
+
+.pages {
+    overflow: visible !important;
+    position: relative;
+}
+
+.pages > div {
+    padding-top: 0px;
+}
+
+.fullsiteWrapper img {
+    max-width: 100%;
 }
 
 body {
-	background: url('../img/bg.jpg');
-	background-size: cover;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #367fa9;
 }
 
-#wrapper1 {
-	width: 100%;
-	height: 100%;
-	position: absolute;
+.menu ul li.active {
+    background-color: #222d32;
+    position: relative;
 }
 
-#start_layer .logo {
-	color: #ffffff;
-	height: 43px;
-	margin-top: 4%;
-	line-height: 70px;
-	opacity: 0;
-	font-size: 50px;
-	font-family: "Helvetica";
-	font-weight: normal;
-	margin-bottom: 30px;
-	
-	text-transform: uppercase;
-	text-align: center;
+.menu ul li a {
+    color: #b8c7ce;
 }
 
-#start_layer .grid>div { 
-	width: 120px;
-	height: 120px;
-	margin: 10px;
-	background: #0f0;
-	position: relative;
-	z-index: 2;
-	cursor: pointer;
-	border-radius: 0px;
-	opacity: 0;
-	border-radius: 50%;
+.sitename {
+    margin-top: 15px;
 }
 
-#start_layer .grid>div:hover {
-	box-shadow: 0 0px 10px #fff;
+.head {
+    text-align: center;
+    background: #ecf0f5;
+    text-transform: uppercase;
 }
 
-#start_layer .grid>div:active {
-	box-shadow: none;
-	margin-top: 20px;
-	margin-bottom: 0px;
+.head h2 {
+    margin-bottom: 15px;
+    color: #222d32;
 }
 
-#start_layer .grid>div {
-	float: left;
-}
-
-#start_layer .grid>div.promostyle {
-	background: url('../uploads/promostyle.jpg') top left transparent;
-}
-
-#start_layer .grid>div.davidoff {
-	background: url('../uploads/davidoff.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.di {
-	background: url('../uploads/di.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.urs {
-	background: url('../uploads/urs.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.koza {
-	background: url('../uploads/koza.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.beauty {
-	background: url('../uploads/beauty.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.roda {
-	background: url('../uploads/roda.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.fb {
-	background: url('../uploads/fb.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.vk {
-	background: url('../uploads/vk.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.gmail {
-	background: url('../uploads/gmail.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.bp {
-	background: url('../uploads/bp.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.iua {
-	background: url('../uploads/iua.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.skype {
-	background: url('../uploads/skype.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.ns {
-	background: url('../uploads/ns.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.sc {
-    background: url('../uploads/sc.png') bottom left transparent;
-}
-
-#start_layer .grid>div.ld {
-    background: url('../uploads/ld.png') bottom left transparent;
-}
-
-#start_layer .grid>div.mspy {
-    background: url('../uploads/mspy.png') bottom left transparent;
-}
-
-#start_layer .grid>div.v2 {
-    background: url('../uploads/v2.png') bottom left transparent;
-}
-
-#start_layer .grid>div.biztorg {
-    background: url('../uploads/biztorg.png') bottom left transparent;
-}
-
-#start_layer .grid>div.fasade {
-    background: url('../uploads/fasade.png') bottom left transparent;
-}
-
-#start_layer .grid>div.bkbm {
-    background: url('../uploads/bkbm.png') bottom left transparent;
-}
-
-#start_layer .grid>div.vilpe {
-    background: url('../uploads/vilpe.png') bottom left transparent;
-}
-
-#start_layer .grid>div.nt {
-    background: url('../uploads/nt.png') bottom left transparent;
-}
-
-#start_layer .grid>div.sl {
-    background: url('../uploads/sl.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div.leo {
-    background: url('../uploads/leo.png') bottom left transparent;
-}
-
-#start_layer .grid>div.yousend {
-    background: url('../uploads/ys.png') bottom left transparent;
-}
-
-#start_layer .grid>div.burenie {
-    background: url('../uploads/burenie.png') bottom left transparent;
-}
-
-#start_layer .grid>div.kino {
-    background: url('../uploads/kino.png') bottom left transparent;
-}
-
-#start_layer .grid>div.ln {
-    background: url('https://pp.vk.me/c607725/v607725145/45e6/r8MPTPRymAg.jpg') bottom left transparent;
-}
-
-
-#start_layer .grid>div.ss {
-    background: url('https://pp.vk.me/c607725/v607725145/45ed/fPKDd9PyAWc.jpg') bottom left transparent;
-}
-
-#start_layer .grid>div>span {
-	background:#0497cd;
-	float: right;
-	margin-top: 0px;
-	margin-right: 0px;
-	padding: 5px;
-	color: white;
-	text-transform: lowercase;
-	font-size: 12px;
-	font-weight: bold;
-	border-radius: 50%;
-	border: 0px solid #990000;
-	line-height: 20px;
-}
-
-#start_layer .grid>div>a {
-	display:block;
-	width: 120px;
-	height: 120px;
-}
-
-div#show_site {
-	position: absolute;
-	z-index: 6;
-	background-color: #303030;
-	display: none;
-	width: 90%;
-	height: 80%;
-	margin-top: 5%;
-	margin-bottom: 2%;
-}
-
-.newContacts { 
-	position: absolute; 
-	right: 2%; 
-	top: 2%; 
-	z-index: 2;
-}
-
-.newContacts a { 
-	text-decoration: none;
-}
-
-div#show_site .close{  
-	width: 32px;
-	height: 35px;
-	right: 27px;
-	color: #ddd;
-	position: absolute;
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 28px;
-	text-align: center;
-	z-index: 5;
-	cursor: pointer;
-	margin-top: 16px;
-}
-
-div#show_site .close:hover { 
-	color: #fff;
-}
-
-.grids {
-	display: none;
-	max-width: 990px;
-	margin: 0 auto;
-}
-
-div#show_site #framewrapper{  
-	width: 100%;
-	height: 90%;
-	z-index: 4;
-	background: #fff;
-}
-
-.url { 
-	height: 10%;
-	padding: 8%;
-	display: table-cell;
-		font-family: "Helvetica",
-             Candara,
-             "Bitstream Vera Sans",
-             "DejaVu Sans",
-             "Trebuchet MS",
-             Verdana,
-             sans-serif;
-        background: #303030;
-        color: #fff;
-        font-size: 30px;
-       
-}
-
-.url a {
-	text-decoration: none;
-	color: #fff;
+#shadow {
+    border-radius: 0px 0px 2px 2px;
 }
